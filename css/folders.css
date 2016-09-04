@@ -1,0 +1,39 @@
+.gravityflowfolders-folder.fa{
+    font-size:70px;
+}
+.gravityflowfolders-folder-container{
+    text-align:center;
+    width: 120px;
+}
+.gravityflowfolders-folder-wrapper li{
+    display: inline-block;
+    padding:10px;
+}
+.gravityflowfolders-folder-wrapper ul{
+    text-align:left;
+    margin-left: 0px;
+}
+
+.gravityflowfolders-folder-wrapper a{
+    text-decoration: none;
+}
+
+.gravityflowfolders-disabled{
+    color:darkgrey;
+}
+.gravityflowfolders-folder-detail-wrapper.checklist li {
+    font-size:20px;
+    padding:5px;
+}
+
+.gravityflowfolders-folder-detail-wrapper.checklist ul li {
+    list-style: disc outside none;
+    margin-left:20px;
+}
+
+.gravityflowfolders-folder-detail-wrapper.checklist ol li {
+    list-style: decimal outside none;
+}
+img.handle{
+    cursor:hand;
+}
