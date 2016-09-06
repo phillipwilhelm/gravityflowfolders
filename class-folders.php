@@ -76,8 +76,6 @@ if ( class_exists( 'GFForms' ) ) {
 		}
 
 		public function scripts() {
-			$min       = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG || isset( $_GET['gform_debug'] ) ? '' : '.min';
-
 			if ( $this->is_settings_page() ) {
 				$forms = GFFormsModel::get_forms();
 
@@ -136,7 +134,6 @@ if ( class_exists( 'GFForms' ) ) {
 		}
 
 		public function styles() {
-			$min    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG || isset( $_GET['gform_debug'] ) ? '' : '.min';
 			$styles = array(
 				array(
 					'handle'  => 'gravityflowfolders_settings_css',
@@ -567,7 +564,6 @@ if ( class_exists( 'GFForms' ) ) {
 		}
 
 		public function action_gravityflow_enqueue_frontend_scripts() {
-			$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG || isset( $_GET['gform_debug'] ) ? '' : '.min';
 			wp_enqueue_style( 'gravityflowfolders_folders',  $this->get_base_url() . "/css/folders{$min}.css", null, $this->_version );
 		}
 	}
